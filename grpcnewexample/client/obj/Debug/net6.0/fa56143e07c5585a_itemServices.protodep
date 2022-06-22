@@ -1,0 +1,3 @@
+obj\Debug\net6.0/ItemServices.cs \
+obj\Debug\net6.0/ItemServicesGrpc.cs: C:/Users/t-anigupta/.nuget/packages/grpc.tools/2.46.3/build/native/include/google/protobuf/timestamp.proto\
+ ../server/Protos/itemServices.proto

@@ -1,0 +1,22 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+option csharp_namespace = "server";
+
+package server; 
+    
+service ExportItem {
+  rpc FindItems (QueryRequest) returns (stream QueryResponse);
+}
+
+message PropertyBag {
+    map<string,string> mapp = 1;
+}
+
+message QueryResponse {
+  repeated PropertyBag properties = 1;
+}
+message QueryRequest { 
+  string filter = 1;   
+  string sortby = 2;
+  string select = 3;
+}
